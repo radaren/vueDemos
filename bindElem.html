@@ -1,0 +1,16 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app-2">
+    <span v-bind:title="message">
+        show dynamic bind info
+    </span>
+</div>
+
+<script>
+    var app2 = new Vue({
+        el:'#app-2',
+        data:{
+            message: 'locate on '+new Date().toLocaleDateString()
+        }
+    })
+</script>
